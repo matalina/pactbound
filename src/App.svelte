@@ -4,6 +4,7 @@
   import Header from './components/Header.svelte';
   import Calendar from './pages/Calendar.svelte';
   import Home from './pages/Home.svelte';
+  import NonPlayerCharacter from './pages/NonPlayerCharacter.svelte';
 
   let { url } = $props();
 </script>
@@ -15,6 +16,7 @@
     <main>
       <Route path="/" component={Home}>Home</Route>
       <Route path="/calendar" component={Calendar}>Calendar</Route>
+      <Route path="/npc" component={NonPlayerCharacter}>NPC</Route>
     </main>
 
     <Footer />
